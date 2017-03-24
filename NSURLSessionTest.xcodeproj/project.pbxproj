@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		260E60331E836D8D006F7C96 /* DownloadHtmlHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 260E60321E836D8D006F7C96 /* DownloadHtmlHelper.m */; };
 		261DF4691E82075C0098BD33 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 261DF4681E82075C0098BD33 /* main.m */; };
 		261DF46C1E82075C0098BD33 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 261DF46B1E82075C0098BD33 /* AppDelegate.m */; };
 		261DF46F1E82075C0098BD33 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 261DF46E1E82075C0098BD33 /* ViewController.m */; };
@@ -29,6 +30,8 @@
 
 /* Begin PBXFileReference section */
 		0962B2CEDEBCC7F2BC9F7023 /* libPods-NSURLSessionTest.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NSURLSessionTest.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		260E60311E836D8D006F7C96 /* DownloadHtmlHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DownloadHtmlHelper.h; sourceTree = "<group>"; };
+		260E60321E836D8D006F7C96 /* DownloadHtmlHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DownloadHtmlHelper.m; sourceTree = "<group>"; };
 		261DF4641E82075C0098BD33 /* NSURLSessionTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NSURLSessionTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		261DF4681E82075C0098BD33 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		261DF46A1E82075C0098BD33 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -92,6 +95,8 @@
 				261DF46B1E82075C0098BD33 /* AppDelegate.m */,
 				261DF46D1E82075C0098BD33 /* ViewController.h */,
 				261DF46E1E82075C0098BD33 /* ViewController.m */,
+				260E60311E836D8D006F7C96 /* DownloadHtmlHelper.h */,
+				260E60321E836D8D006F7C96 /* DownloadHtmlHelper.m */,
 				261DF4701E82075C0098BD33 /* Main.storyboard */,
 				261DF4731E82075C0098BD33 /* Assets.xcassets */,
 				261DF4751E82075C0098BD33 /* LaunchScreen.storyboard */,
@@ -265,7 +270,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run \'pod install\' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		C4E46B869FD34D2B13BC46A1 /* [CP] Copy Pods Resources */ = {
@@ -290,6 +295,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				260E60331E836D8D006F7C96 /* DownloadHtmlHelper.m in Sources */,
 				261DF46F1E82075C0098BD33 /* ViewController.m in Sources */,
 				261DF46C1E82075C0098BD33 /* AppDelegate.m in Sources */,
 				261DF4691E82075C0098BD33 /* main.m in Sources */,
@@ -491,6 +497,7 @@
 				261DF4881E82075C0098BD33 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		261DF4891E82075C0098BD33 /* Build configuration list for PBXNativeTarget "NSURLSessionTestUITests" */ = {
 			isa = XCConfigurationList;
@@ -499,6 +506,7 @@
 				261DF48B1E82075C0098BD33 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
