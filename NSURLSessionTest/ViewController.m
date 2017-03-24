@@ -27,7 +27,7 @@
 - (IBAction)startDownload:(id)sender {
     [self.helper downloadFileWithUrl:@"http://down10.zol.com.cn/xitongruanjian/CleanMyMacv3.6.dmg" version:@"1.0.0" progress:^(int64_t totalBytesWritten, int64_t totalBytesExpectedToWrite) {
         NSLog(@"%@   %@",@(totalBytesWritten),@(totalBytesExpectedToWrite));
-    } complete:^(NSURL *targetFileURL) {
+    } complete:^(NSURL *targetFileURL,NSURLResponse *response) {
         NSLog(@"targetUrl = %@",targetFileURL.absoluteString);
     } failure:^(NSError *error) {
         NSLog(@"error = %@",error.localizedDescription);

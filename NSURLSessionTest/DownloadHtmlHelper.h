@@ -20,6 +20,6 @@ extern NSString *const TYYDownloadCacheFolderName;
 @property (nonatomic ,readonly)NSString *fileName;
 @property (nonatomic ,readonly)NSString *trueName;
 
-- (void)downloadFileWithUrl:(NSString *)url version:(NSString *)version progress:(void(^)(int64_t totalBytesWritten, int64_t totalBytesExpectedToWrite))progress complete:(void(^)(NSURL *targetFileURL))complete failure:(void(^)(NSError *error))failure;
+- (void)downloadFileWithUrl:(NSString *)url version:(NSString *)version progress:(void(^)(int64_t totalBytesWritten, int64_t totalBytesExpectedToWrite))progress complete:(void(^)(NSURL *fileURL,NSURLResponse *response))complete failure:(void(^)(NSError *error))failure;
 
 @end
